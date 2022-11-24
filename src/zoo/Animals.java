@@ -1,6 +1,6 @@
 package zoo;
 
-public  class Animals {
+public abstract class Animals {
     private  String familyClassification; //class
     private int lifeCircle; //sicocxlisganggrdzlivoba
     private int age;
@@ -90,7 +90,7 @@ public  class Animals {
         System.out.println("Maximum life span:"+ this.getLifeCircle());
         System.out.println("Age:"+ this.getAge());
         System.out.println("Color:"+ this.getColor());
-        System.out.println("Phylum "+ this.getPhylum());
-        System.out.println("Class "+ this.getFamilyClassification());
+        System.out.println("Phylum: "+ this.getPhylum());
+        System.out.println("Class: "+ this.getFamilyClassification());
     }
 }
