@@ -2,9 +2,9 @@ package zoo;
 
 public abstract class Animals {
     private  String familyClassification; //class
-    private int lifeCircle; //sicocxlisganggrdzlivoba
+    private int lifeCircle;
     private int age;
-    private String phylum; //gvari
+    private String phylum; // like surname
     private String species; //saxeoba
     private String color;
     private String name ;

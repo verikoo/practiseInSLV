@@ -1,21 +1,28 @@
 package zoo;
 
-public class Aviary {
+public abstract class Aviary {
     private int length;
     private int width;
     private int height;
-    private String Location;
+    private String location;
     private String type;
     private String birdsType;
 
 //    constructor
-
+    public Aviary(){
+        this.length = 0;
+        this.width = 0;
+        this.height = 0;
+        this.location= null;
+        this.type= null;
+        this.birdsType=null;
+    }
 
     public Aviary(int length, int width, int height, String location, String type, String birdsType) {
         this.length = length;
         this.width = width;
         this.height = height;
-        Location = location;
+        this.location = location;
         this.type = type;
         this.birdsType = birdsType;
     }
@@ -34,7 +41,7 @@ public int getLength() {
     }
 
     public String getLocation() {
-        return Location;
+        return location;
     }
 
     public String getType() {
@@ -60,7 +67,7 @@ public int getLength() {
     }
 
     public void setLocation(String location) {
-        Location = location;
+        location = location;
     }
 
     public void setType(String type) {
@@ -78,7 +85,5 @@ public int getLength() {
         System.out.println("For Birds: "+this.getBirdsType());
         System.out.println("Aviary Type: "+this.getType());
     }
-    public int aviarySize(){
-        return this.getHeight()+this.getHeight()+this.getLength();
-    }
+
 }

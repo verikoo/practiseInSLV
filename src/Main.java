@@ -8,14 +8,19 @@ public class Main {
         newZoo.demoZoo();
         System.out.println("newEmployee hashcode is: " + newEmployee.hashCode());
         System.out.println("newZoo hashcode is: " + newZoo.hashCode());
+
         System.out.println("-------------") ;
         Monkey Mila = new Monkey("Mammal", 20, 4, "Chordata", "sooty", "brown", "Mila", 7, "love playing with people");
         Mila.demoMonkey();
         System.out.println("Mila hashcode is: " + Mila.hashCode());
+
+
         System.out.println("-------------") ;
-        Aviary newAviary = new Aviary(5,5,5,"outside", "Home Aviary" ,"Blue Finch");
-        newAviary.demoAviary();
-//        newAviary.aviarySize();
+
+        AviaryGarden yellowBirds = new AviaryGarden(105, 105, 80, "garden", "outside", "Baly Mina", 015, 21);
+        yellowBirds.demoAviaryGarden();
+        System.out.println("yellow birds aviary hashcode is: " + yellowBirds.hashCode());
+
 
 
     }
