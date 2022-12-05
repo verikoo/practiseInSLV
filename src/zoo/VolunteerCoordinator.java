@@ -1,6 +1,8 @@
-package interfaseExamples;
+package zoo;
 
-public class VolunteerCoordinator implements ZooEmployeeWork{
+import interfasexamples.ZooEmployeeWork;
+
+public class VolunteerCoordinator implements ZooEmployeeWork {
     @Override
     public void jobPosition(){
         System.out.println("Volunteer Coordinator");

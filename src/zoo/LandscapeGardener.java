@@ -1,6 +1,8 @@
-package interfaseExamples;
+package zoo;
 
-public class LandscapeGardener implements ZooEmployeeWork{
+import interfasexamples.ZooEmployeeWork;
+
+public class LandscapeGardener implements ZooEmployeeWork {
     @Override
     public void jobPosition(){
         System.out.println("Landscape Gardener");

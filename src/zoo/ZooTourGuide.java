@@ -1,6 +1,8 @@
-package interfaseExamples;
+package zoo;
 
-public class ZooTourGuide implements ZooEmployeeWork{
+import interfasexamples.ZooEmployeeWork;
+
+public class ZooTourGuide implements ZooEmployeeWork {
     @Override
     public void jobPosition(){
         System.out.println("Zoo Tour Guide");

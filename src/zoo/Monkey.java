@@ -1,6 +1,8 @@
 package zoo;
 
-public class Monkey extends Animals{
+import interfasexamples.AnimalAction;
+
+public class Monkey extends Animals implements AnimalAction {
     private int weight;
     private String characterType; // love or not visitors
 
@@ -29,6 +31,15 @@ public class Monkey extends Animals{
         demoAnimalsExample();
         System.out.println("Weight :" + this.getWeight());
         System.out.println("CharacterType:"+ this.getCharacterType());
+    }
+
+    @Override
+    public void animalSound(){
+        System.out.println("Monkey make sound: Chatter && whoop");
+    }
+
+    public void animalSleep(){
+        System.out.println("Monkey sleeps 12 hour");
     }
 
 }

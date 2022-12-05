@@ -1,4 +1,4 @@
-package interfaseExamples;
+package interfasexamples;
 
 public interface ZooEmployeeWork {
     public abstract void jobPosition();

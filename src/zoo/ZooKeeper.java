@@ -1,4 +1,6 @@
-package interfaseExamples;
+package zoo;
+
+import interfasexamples.ZooEmployeeWork;
 
 public class ZooKeeper implements ZooEmployeeWork {
     @Override

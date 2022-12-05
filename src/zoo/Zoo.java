@@ -1,6 +1,6 @@
 package zoo;
 
-public class Zoo {
+public abstract class Zoo {
     private String name;
     private String fullAddress;
     private int area;
@@ -83,9 +83,9 @@ public class Zoo {
         System.out.println("Zoo name: " + this.getName());
         System.out.println("Zoo full address: " + this.getFullAddress());
         System.out.println("Zoo Area: " + this.getArea());
-
+        System.out.println("Zoo Animals Quantity is: " + this.getAnimalsQuantity());
+        System.out.println("Zoo get max numbers of aviary: "+ this.getMaxNumberOfAviaries());
+        System.out.println("Zoo number of filled aviary: "+ this.getNumberOfFilledAviaries());
     }
-
-
 
 }
