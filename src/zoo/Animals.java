@@ -1,6 +1,11 @@
 package zoo;
 
+import linkedlistexample.LinkedListForAnimals;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public abstract class Animals {
+    private final static Logger LOGGER = LogManager.getLogger(Animals.class);
     private  String familyClassification; //class
     private int lifeCircle;
     private int age;
@@ -9,15 +14,6 @@ public abstract class Animals {
     private String color;
     private String name ;
 
-    public Animals(){
-        this.familyClassification=null;
-        this.lifeCircle=0;
-        this.age=0;
-        this.phylum=null;
-        this.species=null;
-        this.color=null;
-        this.name=null;
-    }
 
     public Animals(String familyClassification, int lifeCircle, int age, String phylum, String species, String color,String name){
         this.familyClassification= familyClassification;
@@ -86,11 +82,11 @@ public abstract class Animals {
 
 
     public void demoAnimalsExample(){
-        System.out.println("Name :" + this.getName());
-        System.out.println("Maximum life span:"+ this.getLifeCircle());
-        System.out.println("Age:"+ this.getAge());
-        System.out.println("Color:"+ this.getColor());
-        System.out.println("Phylum: "+ this.getPhylum());
-        System.out.println("Class: "+ this.getFamilyClassification());
+        LOGGER.info("Name :" + this.getName());
+        LOGGER.info("Maximum life span:"+ this.getLifeCircle());
+        LOGGER.info("Age:"+ this.getAge());
+        LOGGER.info("Color:"+ this.getColor());
+        LOGGER.info("Phylum: "+ this.getPhylum());
+        LOGGER.info("Class: "+ this.getFamilyClassification());
     }
 }
