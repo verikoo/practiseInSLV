@@ -1,7 +1,13 @@
 import interfasexamples.*;
 import zoo.*;
 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
+
+
 public class Main {
+    private final static Logger LOGGER = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
         ZooEmployee newEmployee = new ZooEmployee(1, "john", "doe", 24, 7, "africa", "england", "MBA");
         newEmployee.demoEmployee();
@@ -53,6 +59,15 @@ public class Main {
         newMeat.demoMeat();
         newMeat.SumPrice(34,140);
         newMeat.calculateCalories();
+
+
+        System.out.println("info");
+
+        LOGGER.debug("debug");
+        LOGGER.info("info");
+        LOGGER.warn("warn");
+        LOGGER.error("error");
+
 
     }
 
